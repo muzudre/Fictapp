@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#000"
+    tools:context="tk.muslimzabirov.myapplication.MainActivity"
+    android:id="@+id/my_tootlbar">
+
+
+
+    <TextView
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LimKoKwinG"
+        android:textSize="50sp"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+    android:textColor="#fff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="All Information About limkokwing university"
+    android:id="@+id/textView"
+    android:layout_below="@+id/name"
+    android:layout_centerHorizontal="true"
+        android:password="false" />
+
+    <ScrollView
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+
+                android:textColor="#fff"
+                android:onClick="lct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lectures"
+                android:id="@+id/lect"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:onClick="ttb"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TimeTable"
+                android:id="@+id/ttb"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:onClick="mdl"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modules"
+                android:id="@+id/mdl"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:onClick="lot"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/news"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:onClick="ptl"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portal"
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:onClick="ctt"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendar"
+                android:id="@+id/ctt"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:onClick="abt"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:id="@+id/abt"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="#574564"
+                android:layout_margin="6dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:onClick="ctc"
+                android:textColor="#fff"
+                android:background="#039BE5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"
+                android:id="@+id/button"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+       <TableRow
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp">
+
+           <Button
+               android:onClick="drc"
+               android:textColor="#fff"
+               android:background="#00E676"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Direct Call"
+               android:id="@+id/button2"
+               android:paddingTop="25dp"
+               android:paddingBottom="25dp"
+               android:layout_weight="1"
+               android:layout_marginTop="7dp"
+               android:layout_marginRight="5dp" />
+
+           <Button
+
+               android:onClick="bm"
+               android:textColor="#fff"
+               android:background="#F50057"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Direct Mail"
+               android:id="@+id/button4"
+               android:paddingTop="25dp"
+               android:paddingBottom="25dp"
+               android:layout_weight="1"
+               android:layout_marginTop="7dp"
+               android:layout_marginLeft="5dp" />
+       </TableRow>
+   </LinearLayout>
+
+     </ScrollView>
+
+</RelativeLayout>

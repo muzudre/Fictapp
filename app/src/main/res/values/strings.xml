@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LUCT</string>
+    <string name="limkokwing">Limkokwing</string>
+    <string name="title_activity_location">Map</string>
+</resources>
